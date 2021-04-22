@@ -1,0 +1,26 @@
+h1
+{
+	font-family: calibri;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: bold;
+	color: grey;
+	text-decoration: underline;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 4px #02f136;
+}
+
+p
+{
+	font-family: verdana;
+	font-size: 20px;
+	font-style: italic;
+	text-indent: 5em;
+}
+#mystyle{
+	font-family: 'Courier New', Courier, monospace;
+	color:rgba(238, 148, 12, 0.267);
+	text-transform: uppercase;
+}	
+

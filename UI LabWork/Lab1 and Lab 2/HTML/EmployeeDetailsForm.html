@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Details Form</title>
+ </head>
+<body>
+    <form>
+        <table border="1" style="background-color:skyblue">
+            <tr>
+                <td><label>Name </label></td>
+                <td><input type="text"/></td>
+            </tr>
+            <tr>
+                <td><label>Employee Code</label></td>
+                <td><input type="text"/></td>
+            </tr>
+            <tr>
+                <td><label>Department</label></td>
+                <td>
+                    <input type="radio" id="admin" name="department" value="admin">
+                    <label for="male">admin</label><br>
+                    <input type="radio" id="hr" name="department" value="hr">
+                    <label for="hr">HR</label><br>
+                    <input type="radio" id="Technical" name="department" value="Technical">
+                    <label for="Technical">Technical</label><br>
+                    <input type="radio" id="Accounts" name="department" value="Accounts">
+                    <label for="Accounts">Accounts</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>date of Joining</label></td>
+                <td><input type="date"/></td>
+            </tr>
+            <tr>
+                <td><label>Address</label></td>
+                <td><textarea></textarea></td>
+            </tr>
+            <tr>
+                <td><label>Training Program attended</label></td>
+                <td>
+                    <input type="checkbox"/>HTML/DHTML<br>
+                    <input type="checkbox"/>Java<br>
+                    <input type="checkbox"/>Client/Server<br>
+                    <input type="checkbox"/>.NET<br>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Traning program need to attend</label></td>
+                <td>
+                    <select>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Python">Python</option>
+                        <option value="Big Data">Big data</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>send the infromation at</label></td>
+                <td><a><u>empinfo@capgemini.com</u></a></td>
+            </tr>
+        </table>    
+
+    </form>       
+</body>
+</html>
