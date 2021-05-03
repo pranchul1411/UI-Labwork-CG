@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Compound Interest </title>
+    </head>
+    
+    <body>
+        <script>
+          document.write("-----------------------------------------");
+          document.write("*******Calculate Compound Interest*******");
+          document.write("-----------------------------------------");
+          document.write("<br>");
+          document.write("<br>");
+          var p = 1000;
+          var r = 10;
+          var n = 1;
+          var compoundInterest = ((p*(Math.pow((1+(r/100)),n)))-p);  
+          
+
+          document.write(`<pre>
+            Principal                 -        ${p} rs<br>
+            Rate of Interest          -        ${r}%<br>
+            Period                    -        ${n} yr<br>
+            Comp Interest             -        ${compoundInterest}</pre>`);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title> window example </title>
+    </head>
+    <script>
+    function nwindow()
+    {
+    /*TODO:  get the height, width, left and top from the form object and pass the values to open method of window along with the name of the html file to be opened in the new window.*/
+     let w = document.getElementById("width");
+     let h = document.getElementById("height");
+     let l = document.getElementById("left");
+     let r = document.getElementById("right");
+     let str ="toolbar=yes,scrollbars=yes,resizable=yes,top="+r+",left="+l+",width="+w+"height="+h;
+     var myWindow = window.open("", "_blank","str");
+     myWindow.document.write("<p>This window is open on clicking of the new Window button</p>");
+    }
+    function fun(){
+        document.getElementById("frmlab").reset();
+    }
+    </script>
+<body >
+    <form id="frmlab" action="#">
+    <table border="1" cellspacing="8" cellpadding="10" bordercolor="blue">
+        <thead>
+            <th colspan="4">Create a new window</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="4" align="center">Window Size</td>
+            </tr>
+            <tr>
+                <td>Width:</td>
+                <td><input type="number" id ="width"/></td>
+                <td>Height:</td>
+                <td><input type="number" id ="height"/></td>
+            </tr>
+            <tr>
+                <td colspan="4" align="center">POSITION</td>
+            </tr>
+            <tr>
+                <td>Left:</td>
+                <td><input type="number" id ="left"/></td>
+                <td>Right:</td>
+                <td><input type="number" id ="right"/></td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center"><button onclick="nwindow()" id ="newWindow">New Window</button></td>
+                <td align="center"><button onclick="fun()" id="reset">Reset</button></td>
+            </tr>
+        </tbody>
+    </table>
+    </form>
+</body>
+</html>
